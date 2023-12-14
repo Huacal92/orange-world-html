@@ -1,0 +1,22 @@
+{
+  "name": "normalize-sass",
+  "version": "1.0.0",
+  "description": "normalize.css as a Sass file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajkochanowicz/normalize.css.git"
+  },
+  "keywords": [
+    "Normalize.css"
+  ],
+  "author": "Adam Kochanowicz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajkochanowicz/normalize.css/issues"
+  },
+  "homepage": "https://github.com/ajkochanowicz/normalize.css"
+}

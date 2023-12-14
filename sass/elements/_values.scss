@@ -1,0 +1,238 @@
+/* Values Home Banner */
+
+.ow-values-home{
+    position: absolute;
+    width: 100%;
+    max-width: 1190px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 2;
+    padding: 0px 30px;
+
+    .grid-values{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .value-item{
+            width: 33.3333%;
+            border-radius: 6px;
+            border: 0.25px solid $color__primary;
+            background: rgba(0, 0, 0, 0.60);
+            mix-blend-mode: overlay;
+            padding: 10px 20px;
+            transition: transform 0.3s;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;  
+            
+        }
+
+        .icon-main {
+            font-size: 45px;
+            color: $color__gray10;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear; 
+        }
+    }
+
+    h5{
+        color: $color__white;
+    }
+
+    p{
+        color: $color__white;
+        line-height: 1.6;
+    }
+}
+
+.value-item{
+    &:hover:after{
+        display: block;
+        content: " ";
+        position: absolute;
+        bottom: 0px;
+        left: 30px;
+        background-image: url("../../images/icons/Intersect-box.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        height: 5px;
+        
+    }
+
+    &:hover{
+        transform: translateY(-9px);
+        border-color: darken($color__primary, 0.9);
+    }
+
+    &:hover .icon-main{
+        color: $color__primary;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    
+    .ow-values-home{
+        top: 35% !important;
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .ow-values-home{
+        top: 16% !important;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .ow-values-home{
+        top: 50% !important;
+        p{
+            display: none !important;
+        }
+    }
+}
+
+/* Estilos About Us Página Nosotros */
+
+.ow-values-about{
+    position: relative;
+    background-image: url('../../images/bg/bg-ow-valores-cifras.webp');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 220px;
+    width: 100%;
+    height: 600px;
+
+    .grid-values{
+        width: 100%;
+        position: relative;
+        top:-100px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 20px;
+        
+        .value-item{
+            background-color: $color__white;
+            width: 23.3333%;
+            height: auto;
+            max-height: 300px;
+            padding: 40px 12px 20px 12px;
+            text-align: center;
+            border-radius: 6px;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            .icon-main{
+                font-size: 69px;
+                margin-bottom: 10px;
+                color: $texts;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                -ms-transition: all 0.3s linear;
+            }
+    
+            &:hover .icon-main{
+                color: $color__primary;
+            }
+        }   
+
+        
+    }
+
+
+    .ow-counter-clients{
+        position: relative;
+        margin-top: 90px;
+        background: $gradient__primary !important;
+        border-radius: 6px;
+        .grid-data{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 300px;      
+        }
+        .data-item{
+            width: 33.3333%;
+            padding: 10px 50px;
+            text-align: center;
+            color: $color__white;
+        }
+
+        .ow-counter{
+            margin-top: 50px;
+            span{
+                font-size: 53px;
+                font-family: $font_montserrat;
+                font-weight: 800;
+            }
+
+            h6{
+                color: $color__white;
+                font-family: $font_montserrat;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 16;
+            }
+        }
+    }
+}
+
+
+
+.grid-brands-us{
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 1080px){
+    .ow-values-about{
+        height: 900px;
+        .grid-values{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0px 30px;
+            .value-item{
+                width:46%;
+
+            }
+        }
+    }
+    
+    .ow-counter-clients{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 480px){
+    .ow-values-about{
+        height: auto;
+        padding-bottom: 90px;
+        .grid-values{
+            .value-item{
+                width:100%;
+
+            }
+        }
+    }
+
+    
+}

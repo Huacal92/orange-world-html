@@ -1,0 +1,171 @@
+/* About us home */
+
+.ow-about-home{
+    padding: 30px 0px;
+    .grid-about{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 30px;
+        justify-items: center;
+        padding: 0px 60px;
+        .about-item{
+            width: 45%;  
+            position: relative; 
+            
+            .img-main{
+                background-repeat: no-repeat;
+                background-size: contain;
+                border-radius: 9px;
+                filter: drop-shadow(0px 6px 9px rgba(0, 0, 0, 0.30));
+                img{
+                    vertical-align: top;
+                    border-radius: 6px;
+                    width: 100%;
+                }
+            }
+            
+        }   
+        .grid-icons-values{
+            display: flex;
+            justify-content: space-between;
+            gap: 9px;
+            margin-top: 30px;   
+        }
+    
+        .icon-values-item{
+            background-color: $color__white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1px 12px 2px 6px;
+            border-radius: 6px;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            
+            &:hover{
+                filter: drop-shadow(0px 6px 9px rgba(0, 0, 0, 0.10));
+            }
+    
+            .icon-main{
+                color: $color__gray30;
+                font-size: 69px;
+                margin: 0px 10px;
+                transition: all 0.3s linear;
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                -ms-transition: all 0.3s linear;
+            }
+    
+            .text-value-item{
+                margin-top: 16px;
+                margin-left: 9px;
+               
+                p{
+                    line-height: 1.6;
+                    font-family: $font_nunito;
+                }
+            }
+    
+            
+        }
+    
+        .icon-values-item:hover .icon-main{
+            color: $color__primary;
+        }
+    }
+}
+
+/* Media Querys Nosotros Home */
+@media only screen and (max-width: 1080px){
+    .ow-about-home{
+        .grid-about{
+            flex-direction: column ;
+            .about-item{
+                width: 100%;
+                > .ow-heading-left{
+                    padding: 0px;
+                }
+
+                .icon-values-item{
+                    width: 90%;
+                    padding: 30px 0px;
+                    .icon-main{
+                        width: auto;
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+
+    
+
+}
+
+@media only screen and (max-width: 480px){
+    .grid-icons-values{
+        flex-direction: column;
+    }
+    
+
+}
+
+/* About us Pagina */
+.about-section{
+    .grid-about{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        .about-item{
+            flex: 1;
+            width: 50%;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .grid-about{
+        flex-direction: column !important;
+        .about-item{
+            width: 100% !important;
+            padding: 0px 60px;
+            >.ow-heading-left{
+                padding: 0px;
+            }
+
+            .img-main{
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                margin: 120px 0px;
+                >img{
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .img-main{
+        width: 100%;
+        height: auto !important;
+        >img{
+            object-fit: fill !important;
+        }
+    }
+}
+
+
