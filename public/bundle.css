@@ -1539,7 +1539,7 @@ html {
 }
 
 body {
-  background-image: url("../images/bg/bg-pagina-inicio-orange-world.jpg");
+  background-image: url("images/bg/bg-pagina-inicio-orange-world.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -2251,7 +2251,7 @@ textarea {
   position: absolute;
   bottom: 0px;
   left: 30px;
-  background-image: url("../images/icons/Intersect-box.svg");
+  background-image: url("public/images/icons/Intersect-box.svg");
   background-repeat: no-repeat;
   background-size: auto;
   width: 100%;
@@ -3617,14 +3617,16 @@ textarea {
   width: 100%;
   height: 100%;
   min-height: 420px;
-  background-image: url("../images/bg/bg-black-banner-acerca-nosotros-orange-world.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: 500;
   top: -131px;
   left: 0;
   overflow: hidden;
+}
+.page-header img {
+  position: absolute;
+  /* z-index: -1; */
+  top: 0px;
+  left: 0px;
 }
 .page-header .inner {
   width: 100%;
@@ -3642,8 +3644,11 @@ textarea {
   margin-bottom: 0;
   flex: 1;
   padding: 10px 20px 10px 0;
+  position: relative;
+  z-index: 3;
 }
 .page-header .breadcrumbs {
+  position: relative;
   height: 100%;
   flex-direction: column;
   flex: 1;
@@ -3652,6 +3657,7 @@ textarea {
   text-transform: uppercase;
   font-weight: 600;
   text-align: right;
+  z-index: 2;
 }
 .page-header .breadcrumbs li {
   display: inline-block;
