@@ -68,11 +68,15 @@
     height: 100%;
     max-height: 690px;
     padding: 140px 0px;
-    background-image: url('../../images/bg/bg-ow-contact-banner.jpg');
-    background-position: left center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    overflow: hidden;
+
+     >img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        object-fit: cover; 
+    }
 
     &::before{
         content: "";
@@ -81,32 +85,35 @@
         width: 100%;
         height: 100%;
         background-color: $color__secondary;
-        z-index: 2;
+        z-index: -1;
 
 
     }
     .content-cta{
-        z-index: 10;
-    }
-    p{
+        position: relative;
+        z-index: 2;
+        p{
         color: $color__white;
         margin-bottom: 15px;
-    }
-    h2{
-        font-size: 53px;
-        color: $color__white;
-        font-family: $font_montserrat;
-        text-shadow: 1px 1px 20px $color__secondary;
-    }
+        
+        }
+        h2{
+            font-size: 53px;
+            color: $color__white;
+            font-family: $font_montserrat;
+            text-shadow: 1px 1px 20px $color__secondary;
+        }
 
-    a{
-        margin-top: 30px;
-        font-size: 19px;
-        i{
-            margin-left: 10px;
-            font-size: 20px;
+        a{
+            margin-top: 30px;
+            font-size: 19px;
+            i{
+                margin-left: 10px;
+                font-size: 20px;
+            }
         }
     }
+    
 }
 
 
